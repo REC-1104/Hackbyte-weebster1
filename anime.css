@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+    --red: #ff3f81;
+    --black: #23153c;
+   
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+div#container{
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+
+header .logo i{
+    color:var(--red);
+}
+
+header .logo a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--red);
+    transform: rotate(360deg) ;
+}
+
+header .icons i,
+header .icons a{
+    cursor:pointer;
+    margin-left: .5;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 50%;
+    background: var(--red);
+    transition: background .5s;
+}
+
+ div.icons i:hover,
+ nav.navbar a:hover{
+    color: #fff;
+    background:var(--red);
+    transform: rotate(360deg);
+}
+header.icon #menu-bars{
+    display: none ;
+}
+
+
+@media (max-width: 991px)
+{
+    html {
+        font-size: 55%;
+
+    }
+    header
+    {
+        padding: 1rem 2rem;
+    }
+}
+@media(min-width: 768px)
+{
+    header.icons #menu-bars{
+        display: inline-block;     
+    }
+}
+header.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    border-top: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+    padding: 1rem;
+    clip-path:polygon(0,0,100% 0,100% 0,0 0);
+}
+header .navbar.active
+{
+    clip-path:polygon(0 0,100% 0,100% 100%.0% 100%);
+}
+header.navbar a{
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: var(--red);
+}
+
+@media(max-width:468px)
+{
+    html {
+        font-size:50px;
+    }
+}
+
+ .fa{font-family:var(--fa-style-family,"Font Awesome 6 Free");font-weight:var(--fa-style,900)}.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fa-heart:before{content:"\f004"}.fa-play:before{content:"\f04b"}.fa-search:before{content:"\f002"}:root{--fa-style-family-brands:"Font Awesome 6 Brands";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}:root{--fa-style-family-classic:"Font Awesome 6 Free";--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}body,html{background-color:#282828}header{width:100%}footer{background:#eb3349;display:flex;flex-wrap:nowrap;align-content:center;justify-content:center;align-items:center;height:50px}footer div{text-align:center}footer a{color:#fff;font-family:Montserrat,sans-serif;font-size:11px;font-weight:500}@media only screen and (min-width:400px){footer a{font-size:13px}}@media only screen and (min-width:600px){footer a{font-size:15px}}#head-div{background:linear-gradient(to right,#eb3349 40%,#f45c43);width:100%;text-align:center;padding-top:25px;height:86px;margin:auto;font-family:Roboto,sans-serif;font-weight:500;font-size:x-large;color:#fff}h1{color:#eb3349;font-family:Poppins,sans-serif}i{margin:auto;margin-right:10px}a{text-decoration:none}*{box-sizing:border-box;margin:0;padding:0}body,html{height:100%;width:100%;padding:0;margin:0;background-color:#14151a;background-image:none;display:block;height:fit-content;width:100vw}html{position:relative}body{overflow-x:hidden}section{position:relative;width:100%;margin:0;height:fit-content}header{position:relative}div{box-sizing:border-box;display:block}#background{box-sizing:border-box;position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;height:100%;display:block}#overview1{max-height:150px;overflow:auto;display:block}#overview3{max-height:150px;overflow:auto;display:none}#overview2{margin-bottom:4px;display:block}#cover{box-sizing:border-box;position:absolute;top:-20px;left:-20px;right:-20px;bottom:-20px;background-size:cover;background-position:center center;background-repeat:no-repeat;filter:blur(20px);opacity:.35;background-attachment:scroll}.poster{box-sizing:border-box;text-align:center;display:inline;padding:20px;margin:0;overflow:visible;margin-top:20px}.details{width:auto;text-align:left;box-sizing:border-box;display:inline;margin:0;overflow:visible;padding-bottom:20px}.anime{position:relative;top:0;left:0;right:0;bottom:0;text-align:center;box-sizing:border-box;width:100%;overflow:visible;height:fit-content}section img{box-sizing:border-box;height:fit-content;max-width:200px;border:5px solid #fff;border-radius:5px;margin:auto}h1{font-family:Montserrat,sans-serif;font-size:40px;color:#fff;font-weight:700;margin:0;width:100%;text-align:center;font-size:24px;text-align:center;line-height:1.2em}.mid{width:100%;text-align:center}.cbox{border:1px #6d6d6d solid;color:#dfdfdf;font-family:Roboto,sans-serif;font-size:14px;font-weight:400;padding:2px 4px;border-radius:4px}.dot{box-sizing:border-box;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.3);display:inline-block;margin:3px 6px}.year{color:#dfdfdf;font-family:Montserrat,sans-serif;font-size:14px;font-weight:400;padding:2px 4px}.watch-btn{background:#ed3832;color:#000;border-radius:4px;font-weight:400;font-family:Montserrat,sans-serif;padding:10px 20px;text-decoration:none}.synopsis{color:#fff;line-height:1.5em;font-family:Montserrat,sans-serif;font-size:13px;font-weight:300;text-align:left;display:none}#info{display:inline;margin:0;text-align:left;vertical-align:middle;background:rgba(0,0,0,.2);height:100%;padding:20px 10px}.item-head{text-align:left;font-family:Montserrat,sans-serif;color:#fff;-webkit-text-size-adjust:none;line-height:1.4em;font-size:13px;box-sizing:border-box;font-weight:600;margin-bottom:10px;margin-right:5px}.item-des{text-align:left;font-family:Montserrat,sans-serif;color:#fff;font-weight:100;-webkit-text-size-adjust:none;line-height:1.4em;font-size:13px;box-sizing:border-box}.info-items{margin:10px}.genre{border-top:1px solid rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0}.genre a{border:1px solid rgba(255,255,255,.4);box-sizing:border-box;border-radius:20px;color:#fff;font-family:Montserrat,sans-serif;font-size:13px;font-weight:300;padding:4px 8px;text-decoration:none;margin:4px 2px;display:inline-block;width:fit-content}.col-3{width:25%}.col-6{width:50%}[class*=col-]{float:left}.row::after{content:"";clear:both;display:table}#watchh{margin:30px 0 20px 0}[class*=col-]{width:100%}@media only screen and (min-width:600px){.details{width:calc(100% - 250px)}h1{font-size:28px}.genre a,.item-des,.item-head{font-size:15px}h1{text-align:left;font-weight:700;font-size:30px}.details{padding-top:20px}.mid{text-align:left}#watchh{margin:50px 0}.overview{display:none}#overview3,.synopsis{display:block}.genre a,.item-des,.item-head{font-size:13px}section img{box-sizing:border-box;height:fit-content;max-width:300px;width:100%;border:5px solid #fff;border-radius:5px;margin:auto}.poster{box-sizing:border-box;text-align:center;display:inline;margin:0;overflow:visible;margin-top:20px;width:250px}::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#f1f1f100}::-webkit-scrollbar-thumb{background:#888}::-webkit-scrollbar-thumb:hover{background:#555}}@media only screen and (min-width:1200px){.col-3{width:25%}.col-6{width:50%}h1{text-align:left;font-weight:700;font-size:30px}.details{padding-top:40px}.mid{text-align:left}#watchh{margin:50px 0}.overview{display:none}#overview3,.synopsis{display:block}.genre a,.item-des,.item-head{font-size:13px}#info{display:block;height:100%;position:absolute;top:0;right:0;bottom:0;background:rgba(255,255,255,.1);padding-top:30px;overflow:hidden}.poster{box-sizing:border-box;text-align:center;display:inline;margin:0;overflow:visible;margin-top:20px;width:300px}section img{height:100%;width:100%}}#watch{margin-top:20px}.divo{padding:10px}.divox{padding:0}h2{font-family:Montserrat,sans-serif;color:#ed3832;font-weight:500;width:100%;font-size:20px;margin:10px}.divo2{background-color:#202125;padding:20px 10px;padding-bottom:10px;border-radius:4px}#latest{margin-left:20px;margin-top:20px;margin-bottom:15px}#latest2 a{color:#fff;text-decoration:none}#latest2{padding:0;box-sizing:border-box;display:inline-block;text-align:center;width:100%;height:fit-content}.ep-btn{padding:10px 20px;background-color:#35373d;color:#999;text-decoration:none;border-radius:4px;font-weight:400;font-family:Montserrat,sans-serif;font-size:14px;margin:0 2px;margin-bottom:10px;display:inline-block}.la-anime{display:inline-block;padding:0;margin:0 3px;margin-bottom:6px;position:relative;width:calc(50% - 20px);max-width:200px}.shadow{box-shadow:inset 0 -100px 50px -50px #202125;position:relative;height:200px;z-index:1}#shadow1{box-shadow:inset 0 -100px 50px -50px #202125;position:absolute;top:0;left:0;right:0;z-index:3}#shadow2{position:relative;top:0;left:0;right:0;z-index:1}.shadow img{border:none;border-radius:0;height:100%;width:100%;object-fit:cover;object-position:center;vertical-align:middle;overflow:hidden;position:relative;top:0;bottom:0;left:0;right:0;max-width:unset;z-index:1}.dubb{color:#fff;background-color:red;position:absolute;bottom:10px;left:10px;display:block;width:fit-content;border-radius:4px;font-weight:600;font-family:Montserrat,sans-serif;font-size:12px;padding:2px 4px;z-index:5}.dubb2{left:unset;right:10px;background-color:#fff;color:#000}.la-details{background-color:#202125;width:100%;height:85px;box-sizing:border-box;padding:10px;overflow:hidden}.la-details h3{margin:0;font-family:Montserrat,sans-serif;font-size:14px;text-align:left;width:100%;color:#fff;font-weight:500;margin-bottom:8px;height:fit-content;overflow:hidden;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;list-style:none;box-sizing:border-box;height:37px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}#extra{text-align:left;overflow:hidden;width:100%;box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;list-style:none;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.la-details span{color:rgba(255,255,255,.3);font-family:Montserrat,sans-serif;font-size:12px}#search-div{height:fit-content;background-color:#fff;border-radius:5px;height:40px;width:30%;position:absolute;top:25px;right:10px}#search-div input{height:28px;background-color:rgba(255,255,255,0);border:none;padding-left:5px;font-size:14px;font-weight:400;color:#000;overflow:visible;font-family:Montserrat,sans-serif;width:calc(100% - 27px)}#search-div button{background-color:rgba(255,255,255,0);border:none;height:40px;width:20px}#search-div button i{width:16px;height:16px;margin:0}#search-div form{vertical-align:middle;height:100%;width:100%}#query{width:calc(100% - 55px);height:40px}#query:focus{border:none}#title1{height:fit-content;width:70%}@media only screen and (min-width:420px){.shadow{height:240px}}@media only screen and (min-width:580px){#search-div input{width:calc(100% - 55px)}.la-anime{max-width:220px}#title1{height:fit-content;width:calc(100% - 50px);text-align:center}#search-div{height:fit-content;background-color:#fff;margin-right:20px;border-radius:5px;height:40px}#search-div input{height:28px;background-color:rgba(255,255,255,0);border:none;padding-left:15px;font-size:14px;font-weight:400;color:#000;overflow:visible;font-family:Montserrat,sans-serif}#search-div button{background-color:rgba(255,255,255,0);border:none;height:40px;width:40px}#search-div button i{width:16px;height:16px;margin:0}#search-div form{vertical-align:middle;height:100%;width:100%}#query{width:200px;height:40px}#query:focus{border:none}#title1{height:fit-content;width:calc(100% - 247px);text-align:center}#search-div{position:absolute;right:0;top:25px}}@media only screen and (min-width:1200px){.la-anime{max-width:220px}#title1{height:fit-content;width:100%;text-align:center}#search-div{position:absolute;right:0;top:25px}}
