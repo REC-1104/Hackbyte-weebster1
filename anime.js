@@ -1,0 +1,16 @@
+VANTA.DOTS({
+    el: "#container",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0xff3f81,
+    color2: 0xffffff,
+    backgroundColor: 0x23153c,
+    size: 5.4,
+    spacing: 100.0,
+    showLines: false,
+});

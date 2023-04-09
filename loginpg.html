@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN Form</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.8),
+                        rgba(0, 0, 0, 0.8)
+                    ),
+                    url(https://cdn.wallpapersafari.com/16/11/VWPLh8.jpg);
+                background-size: cover;
+                font-family: monospace, sans-serif;
+            }
+            .log {
+                width: 100%;
+                height: 100%;
+            }
+            .loginbox {
+                width: 320px;
+                height: 450px;
+                border-radius: 20px;
+                background: #000;
+                color: #fff;
+                top: 20%;
+                left: 36%;
+                position: absolute;
+            }
+
+            h1 {
+                margin: 0;
+                padding: 0 0 20px;
+                text-align: center;
+                font-size: 30px;
+                font-family: monospace, sans-serif;
+                color: red;
+            }
+            .loginbox p {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+            .loginbox input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .loginbox input[type="text"],
+            input[type="password"] {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+            }
+            .loginbox input[type="button"] {
+                border: none;
+                outline: none;
+                height: 40px;
+                background: #fb2525;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 20px;
+            }
+            .loginbox input[type="button"]:hover {
+                cursor: pointer;
+                background: #ffc107;
+                color: #000;
+            }
+            .loginbox a {
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: darkgrey;
+            }
+            .loginbox a:hover {
+                color: #ffc107;
+            }
+            .active {
+                color: #fff;
+                background: #e02626;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="log" alt="blur" />
+        <div class="loginbox">
+            <h1>Login Here</h1>
+
+            <form>
+                <p style="text-align: center">Username</p>
+                <input
+                    type="text"
+                    name=""
+                    placeholder="Enter Username"
+                    style="
+                        text-align: center;
+                        font-family: monospace, sans-serif;
+                    "
+                    required
+                />
+                <p style="text-align: center">Password</p>
+                <input
+                    type="password"
+                    name=""
+                    placeholder="Enter Password"
+                    style="
+                        text-align: center;
+                        font-family: monospace, sans-serif;
+                    "
+                    required
+                /><br />
+                <!--not sumbit bcoz we dont know have knowledge regarding backend-->
+                <a href="globe2.html"
+                    ><input
+                        type="button"
+                        name=""
+                        value="Login"
+                        style="font-family: monospace, sans-serif"
+                /></a>
+                <a href="#" style="text-align: center">Lost your password?</a
+                ><br />
+                <a href="# " style="text-align: center"
+                    >Don't have an acoount?</a
+                >
+            </form>
+        </div>
+    </body>
+</html>
